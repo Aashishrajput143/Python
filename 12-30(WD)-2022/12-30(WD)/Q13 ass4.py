@@ -1,0 +1,6 @@
+t=input('Enter the string:')
+a=t.split()
+p=int(input('Enter position at which u want to add string:'))
+m=input('Enter the string u want to add in the middle:')
+a.insert(p,m)
+print(' '.join(a))
