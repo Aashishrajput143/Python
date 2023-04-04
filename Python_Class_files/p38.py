@@ -1,0 +1,6 @@
+print(bin(4))
+print(bin(40))
+print(oct(40))
+print(oct(140))
+print(hex(100))
+print(567)
