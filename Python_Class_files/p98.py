@@ -1,0 +1,10 @@
+10
+print("hi")
+"hello"
+print(20)
+#100
+"""
+kjsfhs
+skdfs
+sjkdf
+"""
