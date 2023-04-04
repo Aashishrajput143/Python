@@ -1,0 +1,77 @@
+frozenset:
+----------
+	>it is immutable version of set.
+syntax:
+	var=frozenset(seq)
+
+dict:
+-----
+	>it is a group of items where each item is a pair of key & value.
+	
+	>we may perform operations on dict using key.
+
+	>keys must be unique and values may be duplicate.
+
+	>it is mutable.
+
+	>it maintains order of items(from 3.7 version)
+
+	>it does not support indexing
+
+syntax:
+	var={key:value,key:value,...}
+	var=dict()
+	etc.
+dict comprehension:
+-------------------
+	var={key_exp:val_exp for loop}
+
+d={int(input('enter roll:')):input('enter name:') for _ in "Python"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

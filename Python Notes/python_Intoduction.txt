@@ -1,0 +1,76 @@
+Why Python?
+-----------
+>less development time b'coz of huge library
+>it is best known for it's easy syntax and readability
+>now a days trending because of it's vast usage in machine 
+learning  application.
+
+Why not python?
+---------------
+>poor performence
+>not a first choice in mobile app dev
+
+What is Python:
+---------------
+>it is a general purpose,high level,intrepreted,open source PL.
+>supports multi paradigms
+>dynamically typed
+>platform independent
+>portable
+>first appeared in 1991,by guido van rossum
+>current version is 3.9
+
+General Purpose:
+----------------
+>you may create any type of s/w
+	>desktop
+	>web app
+	>iot app
+	>ai app
+	etc.
+
+High Level:
+-----------
+High level->Human readable(english like abcd,12,3,+-,..)
+low level->cpu readable(0101010)
+
+Interpreter->
+
+>this tool is responsible to generate low level code from high level code.
+
+Open source:
+------------
+>you may obtain python distribution from official website of python free of cost.
+
+>you will also get source code of python standard library.
+
+Paradigm:
+---------
+>way of writting inst. in program
+	>imperative
+	>procedural
+	>object oriented
+	>functional(lambda expression)
+
+python supports all above paradigms.
+
+Platform Independent:
+--------------------
+	>bydefault it is not executed under os directly
+	>you need Python environment(Interpreter) to run python programs.
+
+Portable:
+---------
+	>This python environment is available to all most OS so that we run
+program on diff os.
+
+
+Static v/s Dynamic type Language:
+---------------------------------
+>statically typed
+>dynamically typed
+
+>in ST,programmer is responsible to specify datatype of a variable at the time of decleration
+	int i=10;
+>in DT,language is responsible to decide datatype of a variable.
+	i=10;

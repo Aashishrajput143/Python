@@ -1,0 +1,210 @@
+Exception:
+----------
+>it is an unwanted condition that occur during execution of compiled code due to logical or environment related error.
+
+>it terminates the program abnormally.
+
+Commonly Used Exceptions:
+-------------------------
+>IndexError
+>TypeError
+>ValueError
+>KeyError
+>ZeroDivisionError
+>FileNotFoundError
+>NameError
+etc.
+
+Exception Handling:
+-------------------
+>it is a technique to handle exception so that we can avoid abnormal program termination.
+
+>we also write alternate stmts for those stmts that cause exception.
+
+>python provides following keyword to handle exceptions:
+	>try
+	>except
+	>finally
+	>raise
+	>assert
+
+try block:
+---------
+>it contains logically related stmts whose execution may generate
+exception.
+
+>after try block we must define either except or finally block
+
+except block:
+-------------
+>it is the handler of exception and executed only if an exception is generated from it's try block.
+
+>we may define one or more except block for a try.
+
+try:
+ stmts
+except SpecificException:
+ stmt
+
+try:
+ stmts
+except (SpecificException1,SpecificException2,....):
+ stmt
+
+try:
+ stmts
+except SpecificException1:
+ stmt
+except SpecificException2:
+ stmt
+
+>we may also use parent except block to handle all exception(except StopIteration,KeyboardInterrupt)
+
+try:
+ stmts
+except Exception:
+ stmts
+
+>python also provides a default except block to handle all exceptions
+
+try:
+ stmts
+except:
+ stmts
+
+>we may also use alias in except block
+try:
+ stmts
+except ExceptionName as e:#here e provide msg of exception
+ stmts
+
+order of except:
+---------------
+try:
+ stmts
+except Specific:
+ stmts
+except Exception: #parent
+ stmts
+except: 	  #default
+ stmts
+
+try-except-else:
+----------------
+try:
+ stmts
+except:
+ stmts
+else:
+ stmts
+stmts
+
+>else block is only executed if try is completed without exception
+
+finally block:
+--------------
+>this block is always executed no matter,there is an exception or not,handled or not.
+>it means interpreter always gives the chance for finally block to execute it's stmts before program termination.
+>finally block may also generate exception
+>generally, we use finally block to free the resources like file,socket,database.
+
+try
+ stmts
+except:
+ stmts
+else:
+ stmts
+finally:
+ stmts
+stmts
+
+try
+ stmts
+except:
+ stmts
+finally:
+ stmts
+stmts
+
+
+try:
+ stmts
+finally:
+ stmts
+stmts
+
+Exception Handling in Function:
+-------------------------------
+>A function either returns actual value of return stmt or exception to the calling code.
+
+>we may handle exception of a function in 2 ways:
+	>in function itself
+	>in calling code
+
+exp:
+#in function itself
+
+	def show():	
+	 try:
+	  exception
+	 except:
+           stmt
+
+	show()
+
+#in calling code
+
+	def show():
+	  exception
+
+	try:
+	  show()	
+	except:
+  	  stmt		
+
+
+Ques:Is it possible to execute stmt of function after return stmt?
+Ans:yes,we may write try-finally,and finally is always executed even try contains return stmt.
+
+	exp:
+		def show():
+			try:
+			  return 0
+			finally:
+			  return 1
+
+		print(show())---->1	 
+
+
+How to generate Exception Explicitly:
+-------------------------------------
+	>raise keyword
+	>assert keyword
+
+>both keywords are used to generate exception based on need of application.
+
+>ex: 	
+	we may want to generate exception if program receive -ve age from user.
+
+syntax of raise:
+----------------
+	raise ExceptionName
+	
+	or
+
+	raise ExceptionName('msg')
+	
+assert keyword:
+---------------
+>it always generate AssertionError
+>we need not to write if stmt and we directly write condition with assert
+
+syntax:
+-------
+	assert condition
+		or
+	assert condition,'msg'
+
+condition is true---->do nothing
+condition is false--->generate AssertionError
+

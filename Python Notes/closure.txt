@@ -1,0 +1,16 @@
+Closure function or simply closure:
+-----------------------------------
+>A closure function has following characteristics
+	>it is a nested function
+	>it has access to var of outer function even after destroying outer fun
+	>it is returned by it's outer function
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+range():
+-------
+>it always generate sequence of int elements
+
+range(arg):
+----------
+	>start	->0
+	>stop	->arg
+	>step	->+1
+
+range(arg1,arg2):
+----------------
+	>start	->arg1
+	>stop	->arg2
+	>step	->+1
+
+range(arg1,arg2,arg3):
+----------------
+	>start	->arg1
+	>stop	->arg2
+	>step	->arg3
+
+start---->inclusive
+stop----->exclusive
+arg3----->must not be zero
+arg1,arg2,arg3----->must be int

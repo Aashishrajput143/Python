@@ -1,0 +1,54 @@
+Regular Expression:
+-------------------
+>re is a string expression that identifies substring(s) in a string based on pattern.
+>we may use re:
+    >word matching
+    >form validation
+    >text cleaning
+etc.
+
+>python provides re module and this module contains various methods
+    >finditer
+    >match
+    >search
+    >findall
+    >sub
+    etc.
+
+match():
+------
+>it returns match object if pattern is found in given string in the begning(at 0 position).
+>it returns None if pattern is not found in begning
+>by default it finds pattern in case sensitive manner
+>m.group() returns pattern(matched) string not actual string
+>m.start() returns start pos(inclusive) of matched pattern
+>m.end() returns end pos(exclusive) of matched pattern
+>m.span() returns a tuple(start,end) matched pattern
+
+search():
+--------
+>it finds pattern at any location in the given string and returns match type.
+>it finds single match not all matches.
+
+finditer():
+----------
+>it returns all matches as iterator
+
+findall():
+----------
+>it returns list of all matched patterns
+
+Metacharacters:
+---------------
+[]---->range of chars in either condition
+*----->zero or more occurences
++----->one or more occurences
+?----->zero or one occurences
+{}---->exact occurences
+()---->grouping of chars(sub pattern)
+.----->any character
+|----->or condition
+$----->end match
+^----->start match or except 
+
+['python','pen','panic','pound','pond','p5n','painting','open','company','corresponding']

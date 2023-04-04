@@ -1,0 +1,17 @@
+list:
+=====
+>A list is a sequence of values
+>It can store any types of values
+>it is mutable(modifiable)
+>Supports indexing and slicing
+>allows duplicate values
+>maintains order of values(insertion order)
+>it is iterable
+
+syntax:
+--------
+var=[]				
+var=[value1,value2,.....]
+var=list(existing_iterable)
+
+etc.

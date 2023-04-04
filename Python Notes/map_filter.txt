@@ -1,0 +1,20 @@
+map():
+-----
+    >it is a high order function
+    >it takes 2 args(fun,iterable/sequence)
+    >call fun to each element of iterable
+    >store result for each call into a map type
+    >return this map type
+    >we may convert this map type into list,tuple,....
+
+m=map(function,iterable/sequence)
+
+filter():
+---------
+In simple words, the filter() method filters the given iterable with the help of a function that tests each element in the iterable to be true or not.
+
+The syntax of filter() method is:
+
+filter(function, iterable)
+
+

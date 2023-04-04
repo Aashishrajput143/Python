@@ -1,0 +1,22 @@
+Interpreter:
+------------
+	>it is translator which is responsible to check syntax errors in code and if there is no error convert it into cpu readable form(machine code).
+
+Standard Library:
+-----------------
+	>readymade code in the form of functions,classes,variables given as part of
+python installer.
+	
+	
+IDLE(Integrated Development Learning Environment):
+--------------------------------------------------
+	>it is editor to write python programs
+	>it also provides facility to execute pyothon programs.
+
+pip tool(python index packaging):
+----------------------------------
+	>to download and install 3rd party libraries of python(django,sklearn,pandas,...)
+
+docs:
+-----
+	>official reference tutorial of python.

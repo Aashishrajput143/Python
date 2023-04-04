@@ -1,0 +1,259 @@
+	Object Oriented Programming
+	===========================
+
+>It is a programming style that simplify development and maintenence of real world applications.
+
+>It follows some rules :
+	>object
+	>class
+	>inheritance
+	>encapsulation
+	>abstraction
+	>polymorphism
+	>association
+	etc.
+
+Note:Python mostly focuses on first 3 rules. 
+	
+Object:
+======
+	>it is an instance(executable copy) of a class.
+	>any real world entity having attributes(data and methods).
+	>dynamically allocated block in memory.
+	
+Class:
+=====
+	>it is a blueprint or template to create objects.
+	>a logical concept that defines attributes of similer type objects.
+	
+Syntax to create class:
+-----------------------
+class classname:
+	Attributes
+	
+	or
+	
+class classname():
+	Attributes
+
+Syntax to create object:
+-----------------------
+	obj=classname()
+
+Note:here obj is just a reference to newly created object
+
+
+Attribute:
+----------
+>An attribute is either a datamember or member function(method) inside class
+
+Data members:
+-------------
+	>instance data
+	>class data
+
+Methods:
+--------
+	>instance methods
+	>class methods
+	>static methods
+	
+Instance data:
+--------------
+	>It represents object specific property.
+	>for each object a seperate copy is created
+	>generally we access instance data using object
+	
+	syntax to add instance data:
+	----------------------------
+		obj.data=value (outside class)
+		self.data=value (inside instance method)
+
+class data:
+-----------
+	>It represents shared property to all objects.
+	>single copy is created at the time of class loading
+	>generally we access class data using classname
+	>object can read class data but can't modify it 
+	
+	syntax to add class data:
+	----------------------------
+		classname.data=value (anywhere)
+		cls.data=value (inside class method)
+		data=value (inside class directly)
+	
+	
+Instance Method:
+---------------	
+	>it represents behaviour of individual object
+	>it always accept current object as first arg(self)
+	>it can read/write instance data of self object.
+	>generally we call instance method on object
+	
+Class Method:
+---------------	
+	>it represents behaviour of class
+	>it always accept current class as first arg(cls)
+	>it can read/write class data..
+	>generally we call class method on classname.
+	>@classmethod decorator is required
+
+Static Method:
+---------------	
+	>it represents utility behaviour in class.
+	>it does not accept any implicit arg
+	>generally we call static method on classname.
+	>@staticmethod decorator is required
+
+__init__():
+------------
+	>it is a special instance method in class.
+	>it is used to initialize object datamembers
+	>it is executed by interpreter just after creation of object
+	>we may also call it explicitly(not recommended)
+	
+
+class classname:
+	
+	var1=value			#class data
+	
+	def __init__(self):		#constructor
+		self.var2=value 	#instance data
+
+	def method1(self):		#instance method	
+		stmts	
+ 
+	@classmethod
+	def method2(cls):		#class method	
+		stmts	
+	
+	@staticmethod
+	def method3():			#static method	
+		stmts	
+	
+	
+Inheritance:
+============
+>it is a process of extension,i.e. creating a new class by reusing attributes of an existing class.
+>existing class is known as parent/super/base 
+>newly created class is known as child/sub/derived 
+
+Type:
+----
+>Single-Level:
+	class A:
+	  	attributes of A	
+	class B(A):		#B is child ,A is parent
+		attributes of B		 
+>Multi-Level:
+	class A:
+	  	attributes of A
+	class B(A):		
+		attributes of B		 
+	class C(B):
+		attribute of class C
+>Multiple:
+	class A:
+	  	attributes of A
+	class B:		
+		attributes of B		 
+	class C(A,B):
+		attribute of class C
+>Hybrid:
+	multileple+multilevel
+	class A:
+	  	attributes of A
+	class B(A):		
+		attributes of B		 
+	class C:
+		attribute of class C
+	class D(C,B):
+		attribute of class C
+>Hierarchical:
+	class A:
+		...
+	class B(A):
+		...
+	class C(A):
+		....
+	class D(A):
+		....
+
+Note-1:
+>object class is root of all python classes and it contains 26 attributes like,__init__(),__del__().
+
+Note-2:
+>Python uses MRO to resolve a method call on object.
+
+Method Overriding:
+------------------
+	>it is a process of redifining  a method of parent in child class
+
+	class A:
+		def m(self):
+			...
+	class B(A):
+		def m(self):
+			....
+
+super().m() can be used to access parent class method from child class method.
+
+Data Encapsulation/Hiding:
+==========================
+>it is a process of preventing instance datamember from unauthorized access.
+
+i.e. instance datamembers shud be accessed by instance methods directly and outside code shud call setter and getter method of property(datamember) to access it.
+
+code:
+-----
+	class Emp:
+		def __init__(self):
+			self.__sal=10000  #__ represents private data
+		setter & getter
+
+
+Abstraction:
+===========
+>it defines contract(standard) to child classes i.e. we force child class to override methods of parent.
+
+>we need to define abstract class to acheive abstraction.
+>we can not create object of abstract class.
+>abstract class must inherit ABC class and contains atleast one abstract method.
+>python provides abc module and this module contains ABC(AbstrcatBaseClass) and abstractmethod decorator.
+
+code:
+	from abc import ABC,abstractmethod
+	class Shape(ABC):
+		
+		@abstractmethod
+		def area(self):
+			pass
+
+	s=Shape() #error bcoz Shape is abstract class
+
+	class Circle(Shape):
+		pass
+
+	c=Circle() #error 
+
+Note:if child class does not override abstractmethod of parent,it is also considered as abstract class
+
+so,
+
+	class Circle(Shape):
+		def area(self):
+			print("pi*r*r")
+	
+	c=Circle()
+	c.area()
+
+
+
+
+
+
+
+
+
+
+

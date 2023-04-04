@@ -1,0 +1,31 @@
+type(variable):
+--------------
+>it returns data type of value which is pointed by arg variable
+
+
+id(variable):
+------------
+>it returns address of value which is pointed by arg variable
+
+sys.getsizeof(variable):
+------------------------
+>it returns memory size of value which is pointed by arg variable
+ 
+input(msg):
+-----------
+>it prints arg msg and wait for user input until user presses enter 
+>it always retuns user input as str
+
+int(str):
+---------
+>it returns int of arg str,error if str contains chars other than digits
+
+float(str):
+----------
+>it returns float of arg str,error if str contains chars other than digits and point.
+
+
+
+ 
+
+

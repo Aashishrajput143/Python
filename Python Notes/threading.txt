@@ -1,0 +1,103 @@
+MutiTasking:
+------------
+	>doing multiple jobs concurrently
+	>it uses timesharing approach
+	>it improves efficiency of application
+
+Type of MultiTasking:
+--------------------
+	>process based(multi processing)
+	>thread based(multi threading)
+
+Thread:
+-------
+>A thread is an independent part of a process
+>in the memory,it is a subprocess or light weight process
+>all threads of a process share resources
+>each thread has it's own independent path of execution.
+
+>in python,interpreter is started as process and creates a main
+thread that executes all stmts of python program.
+
+>each thread has it's own stack to execute it's stmts.
+>in python coding,each thread is an object of Thread class
+
+>threading module provides Thread class and other useful functions related to thread.
+
+Creation-execution  of Thread:
+-----------------------------
+step 1:
+	create object of thread class by passing job as target 
+argumnent(here job mean a function ref)
+	t=Thread(target=fun)
+
+step2:
+	start the execution of thread by calling start()
+	t.start()
+
+
+Thread States:
+or
+Thread Life Cycle:
+	>New
+	>Ready
+	>Running
+	>Blocked
+	>Terminated
+
+
+join():
+-------
+>it blocks execution of current executing thread until calling
+thread terminates or 	
+
+	
+Thread Synchronization:
+-----------------------
+>it is process that ensure access of a resource between threads
+one by one.
+
+>locking technique is used to implement T.S.
+
+>first we create object of Lock() and then inside resource(function) thread calls acquire() method
+
+	l=Lock()
+
+	def fun():
+	  l.acquire()
+	  ...
+          ...
+>after executing stmts of fun(), thread shud call release() method sothat other thread may acquire() this lock.
+
+	def fun():
+	  l.acquire()
+	  ...
+          ...
+	  l.release()
+
+Thread creation in OOP:
+-----------------------
+>create child class of Thread
+	class MyThread(Thread):
+		...
+
+>override run() in child class
+	class MyThread(Thread):
+		def run(self):
+		    stmts
+
+>create object of this child class and this object represents thread in memory.
+
+	t=MyThread()
+	
+>start execution of thread by calling start()
+
+	t.start()
+
+
+start():
+------
+it internally creates stack for calling thread and executes run()
+method.
+
+

@@ -1,0 +1,22 @@
+Nested Function:
+----------------
+>A function is said to be nested if it is defined inside block of other function
+
+def show():		#outer or enclosing function
+	def disp():	#nested or local function
+	.
+	.
+
+why nested function:
+--------------------
+1>to write function specific reusable stmts
+2>data security(nested fun can use data of it's outer function but other function can not access it.)
+
+Function as Argument:
+--------------------
+>in python we may also pass a function as argument to other function
+
+Function as return value:
+------------------------
+>in python we may also return a function as value
+

@@ -1,0 +1,38 @@
+List Comprehension:
+-------------------
+	>it is a concise(quick) way to create a list.
+
+syntax:
+	var=[expression for loop]
+
+tuple:
+------
+	>it is immutable version of list.
+syntax:
+	var=(value1,value2,..)
+	var=value1,value2,...
+	var=tuple()
+	etc.
+
+set:
+----
+	>it is a collection of unique elements.
+	>doest not maintain indexing
+	>it is unordered
+	>it is iterable
+	>it is mutable
+syntax:
+	var={value1,value2,...}
+	var=set()
+	etc.
+
+
+
+
+
+
+
+
+
+
+

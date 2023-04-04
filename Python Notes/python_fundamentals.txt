@@ -1,0 +1,144 @@
+Python Fundamentals:
+-------------------
+1.Character Set
+2.Keywords
+3.Literals
+4.Comments
+5.Variables
+6.Conditions
+7.Loopings
+8.Operators
+9.DataType
+10.User Input
+
+
+Character Set:
+--------------
+>set of characters supported by language
+>ASCII and UNICODE character sets are commonly used in languages
+>ASCII supports 128 chars
+>Unicode(version 13) supports 143859 chars.
+>python supports unicode from version 2.7
+
+
+Keywords:
+---------
+>keyword are reserve words having special meanings
+>we can not modify their meaning
+>there are 36 keyword in python 3.9 and out of these 35,33 are in lowercase and 3 are in Capitalizecase.
+	>True
+	>False
+	>None
+
+Literal:
+-------
+>A value of specific type is known as literal
+	>string literal
+	>integral literal
+	>floating literal
+	>boolean literal
+	etc.
+
+>in python,integral literal can be represented as
+	>decimal base 10 (0 to 9) default in python
+	>octal	base 8(0-7)
+	>hexa base 16(0-9,a-f)
+	>binary	base 2(0,1)
+Comment:
+--------
+>it improves readability of source file.
+>single line comment(#)
+
+Variables:
+----------
+>In python,a variable is a pointer or reference to a memory block
+
+>it means,a variable does not store actual value and it stores address of value.
+
+>	syntax in python:
+		var=value
+Note:
+python is a dynamically typed language and data type of variable is decided by language itself based on assigned value
+
+>in python,all values are immutable(unmodifiable) bcoz they are shared to multiple references.
+
+
+Operators:	
+----------
+	>operators are symbols and sometimes keywords that perform
+	mathmatical,relational,logical and other operations.
+	
+	Types:
+	a. 	Unary Operators->required one operand
+	b.	Binary Operators->required two operands
+	c.	Ternary Operator->special syntax	
+	Unary Operators:
+		>Sign Operator
+			a=-1,here - is sign operator
+		>Inverse Operator:
+			not True->False
+			not False->True
+	Binary Operators:
+		>Assignment Operator
+			.Simple Assignment
+			.Multiple Assignment
+			.Chained Assignment
+			.Compound Assignment
+		>Arithmetic Operator
+			.+ (addition)
+			.- (subtraction)
+			.* (multiplication)
+			./ (true div)
+			.//(floor div)
+			.% (modulo or remainder div)
+			.**(power)
+		>Comparision Operator
+			.> (greaterthan),return True if left>right
+			.<
+			.>=
+			.<=
+			.==
+			.!=
+		>Logical Operator
+			.and
+			.or
+			.not
+		>Bitwise Operator
+			.&	(bitwise and)
+			.|	(bitwise or)
+			.^	(bitwise xor)
+			.>>	(bitwise rightshift)
+			.<<	(bitwise leftshift)
+	>Ternary(Conditional) Operator
+
+		true_value if(condition) else false_value
+			
+>Conditions
+-----------
+		>if condition
+		>if else condition
+		>if elif condition
+		>if elif else condition
+		>nested condition
+		
+>Looping
+---------
+		>while loop
+		>for loop
+		
+>Datatypes
+----------
+	>python is a dynamically typed language it means we need not to
+	use datatypes explicitly and language autometically takes care
+	of it.
+	
+	int:
+		>it represents integral values
+		>there is no limit of range
+		>size is dynamically decided at runtime.
+		Note:it is the only integral type in python
+	float:
+		>it represents decimal point(real) values
+		>there is no limit of range
+		>size is dynamically decided at runtime.
+		Note:it is the only decimal point type in python

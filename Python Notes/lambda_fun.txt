@@ -1,0 +1,17 @@
+lambda function:
+---------------
+>it is another way to define function in python
+>it is defined as expression
+>initially,it does not have any name(a.k.a anonymous function)
+>generally we use lambda in high order functions and event handling.
+>in real life,it is like use & throw entity.
+
+	syntax:
+	------
+	lambda args:expression
+
+>lambda functions can have any number of arguments but only one expression.
+>this expression is evaluated and returned when lambda function is called.
+
+
+
